@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Five Nigths At Freddys</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+--white-color: #ffffff;
+--dark-color: #000000;
+--primary-color: #270146;
+--secondary-color: #764c87;
+--light-pink-color: #faf4f5;
+--medium-gray-color:#ccd;
+
+--font-size-s: 0.9rem; --font-size-n: 1rem;
+--font-size-m: 1.12rem;
+--font-size-1: 1.5rem;
+--font-size-x1: 2rem;
+--font-size-xx1: 2.3rem;
+
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+---font-weight-semibold: 600; 
+--font-weight-bold: 700;
+
+--border-radius-s: 8px; 
+--border-radius-m: 30px; 
+--border-radius-circle: 50%;
+
+--site-max-width: 1300px;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: var(--site-max-width);
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+}
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-x1);
+    font-weight: var(---font-weight-semibold);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xx1);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 50px;
+    max-width: 60%;
+    font-size: var(--font-size-x1);
+    font-weight: var(---font-weight-semibold);
+}
+
+.hero-section .hero-details .description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .buttons{
+    display: flex;
+    gap:23px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .button-us{
+    color:var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .contac-us:hover{
+    color:var(--primary-color);
+    border-color: var(--secundary-color);
+    background: var(--secondary-color);
+}
+
+.hero-section .hero-imagen-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+@media  screen and (max-width:900px) {
+:root{
+        --font-size-m: 1rem;
+--font-size-1: 1.3rem;
+--font-size-x1: 1.5rem;
+--font-size-xx1: 1.8rem;
+    }
+    .navbar .nav-menu{
+display: block;
+ position: fixed;
+  left: 0;
+top: 0;
+width: 300px;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top:100px;
+background: var (--white-color);
+    }
+    .navbar .nav-menu .nav-link{
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-1);
+    }
+}
+
+</style>
+    </head>
+<body>
+<header>
+<nav class="navbar section-content">
+<a href="#" class="nav-logo">
+ <h2 class="logo-text">Freddys🎩🐻🎤</h2>
+ </a>
+ <ul class="nav-menu">
+<button id="menu-close-button" class="fas-times"></button>
+
+    <li class="nav-item">
+        <a href="#" class="nav-link">Oficina</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">FNAF 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">FNAF 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">FNAF 3</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">FNAF 4</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Sister Location</a>
+    </li>
+ </ul>
+</nav>
+</header>
+<main>
+    <section class="hero-section">
+<div class="section-content">
+    <div class="hero-details">
+        <h2 class="title">Oficina</h2>
+        <h3 class="subtitle">The Office (La Oficina), también conocida como The Security Guard's Office (La Oficina del Guardia de Seguridad) o The Security Office (La Oficina de Seguridad), es una ubicación que aparece en casi todas las entregas de la serie Five Nights at Freddy's. Es, en la mayoría de los casos, la única habitación que habita el jugador y desde donde puede monitorear los animatrónicos a través de las cámaras de vigilancia. 
+        <p class="description">A pesar de que parece tratarse de animatrónicos que no funcionan bien, el creador del juego ha confirmado que la pizzería está "encantada". Sin embargo, la historia está escondida dentro del juego, y el Sujeto del teléfono deja al jugador mensajes para darle consejos, o simplemente está engañando al jugador con su interpretación de los acontecimientos o lo que se transmite de la gestión.</p>
+    
+        <div class="buttons"></div>
+        <a href="#" class="button scott cawthon">scott cawthon</a>
+        <a href="#" class="button libros">libros</a>
+    </div>
+</div>
+<div class="hero-image-wrapper">
+<img src="Image de hero-section.png.jpg" alt="Hero" class="hero-image">
+</div>
+    </section>
+</main>
+</body>
+</html>
